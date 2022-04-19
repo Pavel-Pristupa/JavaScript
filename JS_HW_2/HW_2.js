@@ -42,6 +42,7 @@ function validateString(str) {
   }
 }
 
+// Test data
 var string_1 = '';
 var string_2 = 'aaa';
 var string_3 = 'myString';
