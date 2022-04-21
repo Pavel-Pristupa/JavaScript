@@ -1,33 +1,33 @@
 function validateString(str) {
-  var strInput = String(str);
-  var numberFlag = false;
-  var charFlag = false;
-  var upperCharFlag = false;
-  var atCharFlag = false;
-  var notEmptyFlag = false;
+  let strInput = String(str);
+  let numberFlag = false;
+  let charFlag = false;
+  let upperCharFlag = false;
+  let atCharFlag = false;
+  let notEmptyFlag = false;
 
   if(strInput !== ""){
-    var notEmptyFlag = true
+    notEmptyFlag = true
   } else {
     console.log("You've entered an empty string.")
   };
   if(/[a-zA-Z]/.test(strInput)){
-    var charFlag = true
+    charFlag = true
   }else {
     console.log(`Your string "${strInput}" contains no letters.`)
   };
   if(/[0-9]/.test(strInput)){
-    var numberFlag = true
+    numberFlag = true
   } else {
     console.log(`Your string "${strInput}" contains no numbers.`)
   };
   if(/[A-Z]/.test(strInput)){
-    var upperCharFlag = true
+    upperCharFlag = true
   } else {
     console.log(`Your string "${strInput}" contains no uppercase letters.`)
   };
   if(strInput.includes('@')) {
-    var atCharFlag = true
+    atCharFlag = true
   } else {
     console.log(`Your string "${strInput}" contains no '@'.`)
   };  
@@ -44,7 +44,7 @@ function validateString(str) {
 
 // Test data
 var string_1 = '';
-var string_2 = 'aaa';
+var string_2 = 'aa';
 var string_3 = 'myString';
 var string_4 = 'myStr1ng';
 var string_5 = 'Lorem 1psum dolor sit @met, consectetuer adipiscing elit, sed dia';
@@ -53,5 +53,5 @@ var string_7 = '@myStr1ng'
 var string_8 = 1111
 var string_9 = 'mY@1'
 
-validateString(string_7)
+validateString(string_8)
 
