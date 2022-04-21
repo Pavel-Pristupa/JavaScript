@@ -1,7 +1,8 @@
+const minAge = 18;
+const maxAge = 60;
+
 // Task 1*:
 function checkAge_1(age){
-    var minAge = 18;
-    var maxAge = 60;
     if (age < minAge){
         console.log(`You don't have access cause your age is ${age}. It's less than ${minAge}`)
     } else if (age >= minAge && age < maxAge) {
@@ -20,8 +21,6 @@ checkAge_1(61)
 
 // // Task 2*:
 function checkAge_2(age){
-    var minAge = 18;
-    var maxAge = 60;
     if(typeof age === 'number'){
         if (age < minAge){
             console.log(`You don't have access cause your age is ${age}. It's less than ${minAge}`)
@@ -43,10 +42,8 @@ checkAge_2(61)
 checkAge_2("asd")
 
 
-// Task 3**:
+// // Task 3**:
 function checkAge_3(age){
-    var minAge = 18;
-    var maxAge = 60;
     if(typeof age === 'number' || !isNaN(+age)){
         if (age < minAge){
             console.log(`You don't have access cause your age is ${age}. It's less than ${minAge}`)
@@ -69,7 +66,7 @@ checkAge_3("asd")
 checkAge_3('2')
 
 
-// Task 4***:
+// // Task 4***:
 function checkAge_4(){
     var age = prompt('What\'s your age?');
     var minAge = 18;
