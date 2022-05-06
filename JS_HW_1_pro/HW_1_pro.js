@@ -46,7 +46,7 @@ checkAge_2('asd');
 
 // // Task 3**:
 function checkAge_3(age) {
-	if (typeof age === 'number' || !isNaN(+age)) {
+	if (!isNaN(+age)) {
 		if (age < MIN_AGE) {
 			console.log(
 				`You don't have access cause your age is ${age}. It's less than ${MIN_AGE}`
